@@ -11,7 +11,7 @@ namespace Store.Web
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main(string[] args) //читает методы 
         {
             CreateHostBuilder(args).Build().Run();
         }
