@@ -5,15 +5,13 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domain", "domain", "{F7A100FE-34E6-46F5-B0EF-8F0630251094}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R_Store", "domain\R_Store\R_Store.csproj", "{88E90E3B-159E-4E53-8F63-429B3A01E8D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R_Store", "domain\R_Store\R_Store.csproj", "{88E90E3B-159E-4E53-8F63-429B3A01E8D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{192008F4-308E-4E87-AF7A-BC4680FBC87C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Memory", "infrastructure\Store.Memory\Store.Memory.csproj", "{1E782CD9-AA9B-4413-B2FB-E394497C7410}"
 EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5991D159-A921-466C-B950-99AAAAB0BB95}
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -35,8 +33,27 @@ Global
 		{88E90E3B-159E-4E53-8F63-429B3A01E8D9}.Release|x64.Build.0 = Release|Any CPU
 		{88E90E3B-159E-4E53-8F63-429B3A01E8D9}.Release|x86.ActiveCfg = Release|Any CPU
 		{88E90E3B-159E-4E53-8F63-429B3A01E8D9}.Release|x86.Build.0 = Release|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Debug|x64.Build.0 = Debug|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Debug|x86.Build.0 = Debug|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Release|x64.ActiveCfg = Release|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Release|x64.Build.0 = Release|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Release|x86.ActiveCfg = Release|Any CPU
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{88E90E3B-159E-4E53-8F63-429B3A01E8D9} = {F7A100FE-34E6-46F5-B0EF-8F0630251094}
+		{1E782CD9-AA9B-4413-B2FB-E394497C7410} = {192008F4-308E-4E87-AF7A-BC4680FBC87C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5991D159-A921-466C-B950-99AAAAB0BB95}
 	EndGlobalSection
 EndGlobal
