@@ -32,6 +32,7 @@ namespace Store.Web
             });
 
             services.AddSingleton<IProduct_Repository, ProductRepository>();
+            services.AddSingleton<IOOOrder_Repository,Order_Repository>();
             services.AddSingleton<ProductRepository>();
         }
 
