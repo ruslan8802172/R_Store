@@ -14,8 +14,9 @@ namespace R_Store
             if (count <= 0)
                 throw new ArgumentOutOfRangeException("Count must be greater than zero.");
             ProductId = productid;
-            Count = count;
             Price = price;
+            Count = count;
+          
         }
     }
 }

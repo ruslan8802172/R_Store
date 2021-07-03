@@ -1,5 +1,6 @@
 ﻿using R_Store;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 namespace Store.Memory
 {
@@ -20,6 +21,14 @@ namespace Store.Memory
             new Product(4, "Смартфон Apple iPhone 7 Plus 256 ГБ черный", "Apple", $@"Смартфон Apple iPhone 7 Plus имеет мощный и экономичный аккумулятор iPhone, защиту от брызг и воды, особую систему стереодинамиков. Его внешние данные впечатляют не менее, чем внутренние возможности.
                                                                                     +Apple iPhone 7 Plus оснащен камерой на 12 Мп с диафрагмой f/1.8 – вы можете увеличивать изображение в высоком разрешении и снимать отличные фото, видео 4K в условиях низкой освещенности. Модель имеет оптическую стабилизацию изображения, а также дисплей Retina HD 5.5 дюйма с расширенным цветовым охватом и поддержкой 3D Touch. Процессор A10 Fusion обеспечивает производительность до 2 раз выше, чем у iPhone 6. Повышенная скорость 4G LTE также отличает представленную модель.", 33999m),
         };
+
+        public Product[] GetAllByIds(IEnumerable<int> productIds)
+        {
+            var foundProduct = from Product in products
+                               join ProductId in productIds on Product.Id equals ProductId
+                               select Product;
+            return foundProduct.ToArray();
+        }
 
         public Product[] GetAllByTitle(string titlePart)
         {
