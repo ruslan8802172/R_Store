@@ -8,10 +8,20 @@ namespace R_Store
 
         public string Title { get; }
 
-        public Product(int id, string title)
+        public string Company { get; }
+
+        public string Information { get; }
+
+        public string Price { get; } //или можно decimal
+        public Product(int id, string title,string information, string company, string price)
         {
-            Id = id;
+            Id = id; 
             Title = title;
+            Information = information;
+            Company = company;
+            Price = price;
+         
+         
         }
 
     }
