@@ -12,8 +12,8 @@ namespace R_Store
 
         public string Information { get; }
 
-        public string Price { get; } //или можно decimal
-        public Product(int id, string title,string information, string company, string price)
+        public decimal Price { get; } //или можно decimal
+        public Product(int id, string title,string information, string company, decimal price)
         {
             Id = id; 
             Title = title;
