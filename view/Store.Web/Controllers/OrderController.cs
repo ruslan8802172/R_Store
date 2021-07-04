@@ -11,7 +11,6 @@ namespace Store.Web.Controllers
 {
     public class OrderController : Controller
     {
-
         private readonly IProduct_Repository ProductRepository;
         private readonly IOOOrder_Repository Order_Repository;
         public OrderController(IProduct_Repository ProductRepository,
@@ -57,6 +56,7 @@ namespace Store.Web.Controllers
                 TotalPrice = order.TotalPrice,
             };
         }
+
         public IActionResult Add(int id)
         {
             Order order;

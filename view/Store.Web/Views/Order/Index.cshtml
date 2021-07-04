@@ -29,10 +29,6 @@
             <td class="text-right">@Model.Items[i].Price</td>
             <td class="text-right"></td>
             <td class="text-center">
-                <form class="form-inline" action="@Url.Action("RemoveItem", "Order")" method="post">
-                    <input type="hidden" name="ProductId" value="@Model.Items[i].ProductId" />
-                    <button class="btn btn-danger" type="submit">Удалить</button>
-                </form>
             </td>
         </tr>
         }

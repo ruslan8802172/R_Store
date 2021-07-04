@@ -1,6 +1,10 @@
-﻿namespace Store.Web.Controllers
+﻿using Store.Web.Models;
+using System;
+
+namespace Store.Web.Controllers
 {
-    internal class OrderService
+    public class OrderService
     {
+      
     }
 }
