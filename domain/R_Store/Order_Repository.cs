@@ -5,7 +5,7 @@ using System.Text;
 
 namespace R_Store
 {
-    public class Order_Repository : IOOOrder_Repository
+    public class Order_Repository : IOOOrder_Repository //Наследование
     {
         private readonly List<Order> orders = new List<Order>();
         public Order Create()

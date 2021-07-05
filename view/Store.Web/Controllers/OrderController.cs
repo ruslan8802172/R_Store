@@ -9,7 +9,7 @@ using Store.Web.Models;
 
 namespace Store.Web.Controllers
 {
-    public class OrderController : Controller
+    public class OrderController : Controller//Наследование
     {
         private readonly IProduct_Repository ProductRepository;
         private readonly IOOOrder_Repository Order_Repository;

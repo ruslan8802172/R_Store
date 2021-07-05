@@ -3,7 +3,7 @@ using R_Store;
 
 namespace Store.Web.Controllers
 {
-    public class SearchController : Controller
+    public class SearchController : Controller//Наследование
     {
         private readonly IProduct_Repository ProductRepository;
 
